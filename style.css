@@ -1,0 +1,448 @@
+/* Page Background */
+body {
+    background-color: #e9f2ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #003f6b;
+    font-weight: bold;
+}
+
+/* Paragraph */
+p {
+    text-align: center;
+    font-size: 20px;
+    color: #444;
+}
+
+/* Navbar Improve */
+.navbar {
+    background-color: #0d6efd !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #d9eaff !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #0d6efd;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #003f6b;
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Cards */
+.card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 7px 22px rgba(0,0,0,0.18);
+}
+
+.card-title {
+    color: #0d6efd;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d6efd;
+    color: white;
+    padding: 40px 0 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer h4,
+.footer h5 {
+    font-weight: 700;
+}
+
+.footer p {
+    color: #e2eaff;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #dce9ff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.footer .copyright {
+    color: #dce9ff;
+    font-size: 14px;
+}
+.is{
+    max-width: 90%;
+    color: gray;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.card-title{
+    margin-top: 70px;
+}
+/* Remove top margin for card title on Home page */
+.home-page .card-title {
+    margin-top: 0;
+}
+
+/* About page ke cards ke liye agar top margin chahiye */
+.about-page .card-title {
+    margin-top: 70px; /* sirf About page cards ke liye */
+}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    /* IMAGE LIGHT OR DARK FILTER */
+    filter: brightness(50%);  /* 50% = thodi dark, Zyada dark chahiye to 40% kar do */
+}
+
+/* Text Over Image */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.a{
+    color: black;
+}
+
+
+
+body {
+    background-color: #e9f2ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #003f6b;
+    font-weight: bold;
+}
+
+/* Intro text */
+.is {
+    max-width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 16px;
+}
+
+/* 🔥 IMAGE FIX */
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #f2f5f9;
+}
+.request{
+    text-align: center;
+}
+
+
+
+
+.form-section {
+    max-width: 600px;
+    margin: 10px auto ;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #003f6b;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+
+.form-section button {
+    background-color: #ffc107;
+    color: #003f6b;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+.experience{
+    font-size: 16px;
+}
+/* ===== Modal Styling ===== */
+.modal-content {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #0d6efd; /* same as navbar */
+    color: white;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 30px;
+    background-color: #f9faff;
+}
+
+/* Form Inputs */
+#appointmentForm input,
+#appointmentForm select,
+#appointmentForm textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+#appointmentForm input:focus,
+#appointmentForm select:focus,
+#appointmentForm textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+/* Submit Button */
+#appointmentForm button {
+    background-color: #ffc107; /* yellow button */
+    color: #003f6b;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#appointmentForm button:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+/* Labels */
+#appointmentForm label {
+    font-weight: 500;
+    color: #003f6b;
+}
+
+/* Surgery Type Field (readonly) */
+#surgeryType[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body class="home-page">
+
+    
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Medical Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="dr.html">Dr.Information</a></li>
+            <li><a class="dropdown-item" href="sur.html">Surgeries</a></li>
+         
+
+           </ul>
+
+            <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us</a>
+        </li>
+</nav>
+
+
+<section>
+  <h1>Contact US</h1>
+  <P>We are here to help you with appointments and inquiries</P>
+</section>
+
+  <section class="container my-5">
+  <div class="row text-center g-4">
+
+    <div class="col-md-3">
+      <div class="card p-3 h-100">
+        <h5>📍 Address</h5>
+        <p>Main Road, City Center</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 h-100">
+        <h5>📞 Phone</h5>
+        <p>+92 300 1234567</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 h-100">
+        <h5>📧 Email</h5>
+        <p>info@medicalhospital.com</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 h-100">
+        <h5>⏰ Timings</h5>
+        <p>Mon–Sat: 9AM – 8PM</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<h2 class="request">Request Appointment</h2>
+
+<section class="form-section">
+  <form action="#" method="post">
+    <fieldset>
+
+      <label class="form-label" for="name">Name:</label>
+      <input type="text" id="name" required maxlength="3" placeholder="Enter Your Full Name"><br>
+
+   
+      <label class="form-label" for="contact">Contact NO:</label>
+      <input type="text" id="contact" required maxlength="3" placeholder="Enter Your Contact NO"><br>
+
+      <label class="form-label" for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Enter Your Email"><br>
+      
+      <label class="form-label">Department:</label>
+      <select>
+        <option>Cardiology</option>
+        <option>Dentist</option>
+         <option>Orthopedic Surgeon</option>
+          <option>General Physician</option>
+           <option>Pediatrics</option>
+            <option>Dermatologist</option>
+           <option>Orthopedic Surgeon</option>
+             <option>Gynecology</option>
+             <option>General Surgury</option>
+             <option>Urologist</option>
+             <option>ENT Surgeon</option>
+      </select>
+
+      <label class="form-label">Dr.NAME:</label>
+      <select>
+        <option>Dr. Ahmed Malik</option>
+         <option>Dr. Ayesha Bukhari</option>
+          <option>Dr. Zainab Rehman</option>
+           <option>Dr. Sara Khan </option>
+            <option>Dr. Hamza Ali</option>
+             <option>Dr. Sana Iqbal</option>
+              <option>Dr. Maria Khan</option>
+               <option>Dr. Omar Sheikh</option>
+               <option>Dr. Ayesha Tariq</option>
+               <option>Dr. Usman Riaz</option>
+               <option>Dr. Hamza Ali</option>
+               <option>Dr. Ahmed Siddiqui</option>
+               <option>Dr. Bilal Ahmed</option>
+               <option>Dr. Salman Raza</option>
+               <option>Dr. Maria Hussain</option>
+      </select>
+  
+      <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+       <button type="button" class="btn btn-outline-warning">Submit Form</button>
+    </fieldset>
+  </form>
+</section>
+
+
+<!-- FOOTER START -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Hospital Info -->
+      <div class="col-md-4">
+        <h4>Medical Hospital</h4>
+        <p>Providing quality healthcare with expert doctors and modern facilities.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5>Contact Info</h5>
+        <p>📍 Address: Main Road, City Center</p>
+        <p>📞 Phone: +92 300 1234567</p>
+        <p>📧 Email: info@medicalhospital.com</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="text-center">
+      <p class="copyright">© 2025 Medical Hospital. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

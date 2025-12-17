@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body class="home-page">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Medical Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="dr.html">Dr.Information</a></li>
+            <li><a class="dropdown-item" href="sur.html">Surgeries</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+</nav>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="appointmentForm">
+          <div class="mb-3">
+            <label for="patientName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="patientName" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="patientEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="patientEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="patientPhone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="patientPhone" placeholder="Enter your phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="surgeryType" class="form-label">Surgery Type</label>
+            <input type="text" class="form-control" id="surgeryType" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="appointmentDate" class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" id="appointmentDate" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="hero-section">
+  <img src="./images/s.jpg" class="img-fluid hero-img" alt="...">
+  <div class="hero-text">
+    <h2>Our Surgical Services</h2>
+    <p class="a">Safe, modern and patient-focused surgical care.</p>
+  </div>
+</section>
+
+<section class="available my-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Available Surgeries</h1>
+    <h5 class="card-title mb-4">General Surgeries:</h5>
+    <div class="row g-4">
+      <!-- Appendix Card -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Appendix</h5>
+          <p class="card-text">Appendix surgeries performed by experienced surgeons ensuring fast recovery.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Appendix">Appointment</button>
+        </div>
+      </div>
+      <!-- Gallbladder -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Gallbladder Surgery</h5>
+          <p class="card-text">Removal of gallstones and inflamed gallbladder using safe and advanced procedures.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Gallbladder Surgery">Appointment</button>
+        </div>
+      </div>
+      <!-- Hernia -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Hernia Repair</h5>
+          <p class="card-text">Hernia surgeries performed by experienced surgeons ensuring fast recovery.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Hernia Repair">Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="available my-5">
+  <div class="container">
+    <h5 class="card-title mb-4">Orthopedic Surgery:</h5>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Fracture treatment</h5>
+          <p class="card-text">Fracture treatments include setting broken bones, casting, and using modern techniques for proper healing and quick recovery.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Fracture treatment">Appointment</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Joint procedures</h5>
+          <p class="card-text">Joint procedures cover surgeries like joint replacement, repair, and minimally invasive treatments to restore mobility and reduce pain.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Joint procedures">Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="available my-5">
+  <div class="container">
+    <h5 class="card-title mb-4">ENT Surgery:</h5>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Tonsils</h5>
+          <p class="card-text">Tonsil surgeries help remove infected or enlarged tonsils, preventing recurring throat infections and improving overall health.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Tonsils">Appointment</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Sinus surgeries</h5>
+          <p class="card-text">Sinus surgeries treat chronic sinus problems using safe and modern techniques, helping restore normal breathing and reduce infections.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Sinus surgeries">Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Repeat for Gynecology, Eye, Urology with proper data-surgery -->
+<!-- Example for Gynecology -->
+<section class="available my-5">
+  <div class="container">
+    <h5 class="card-title mb-4">Gynecology Surgeries:</h5>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">C-section</h5>
+          <p class="card-text">C-section is a safe surgical procedure to deliver babies when natural birth is not possible or risky.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="C-section">Appointment</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Ovarian surgeries</h5>
+          <p class="card-text">Ovarian surgeries include treatment of tumors and other ovarian conditions using modern techniques for quick recovery.</p>
+          <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-surgery="Ovarian surgeries">Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var appointmentModal = document.getElementById('appointmentModal');
+  appointmentModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var surgery = button.getAttribute('data-surgery');
+    var input = appointmentModal.querySelector('#surgeryType');
+    input.value = surgery;
+  });
+
+  document.getElementById('appointmentForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Appointment booked for " + document.getElementById('surgeryType').value + "!");
+    var modal = bootstrap.Modal.getInstance(appointmentModal);
+    modal.hide();
+    this.reset();
+  });
+</script>
+</body>
+</html>
